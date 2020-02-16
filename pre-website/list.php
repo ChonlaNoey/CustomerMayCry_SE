@@ -56,7 +56,7 @@ include('database_connection.php');
                     {
                     ?>
                     <div class="list-group-item checkbox">
-                        <label><strong><input type="checkbox" class="common_selector category" value="<?php echo $row['cname']; ?>"  > <?php echo $row['cname']; ?></strong></label>
+                        <label><strong><input type="checkbox" class="common_selector category" value="<?php echo $row['cname_tha']; ?>"  > <?php echo $row['cname_tha']; ?></strong></label>
                     </div>
                     <?php
                     }
@@ -95,7 +95,7 @@ include('database_connection.php');
                     {
                     ?>
                     <div class="list-group-item checkbox">
-                        <label><strong><input type="checkbox" class="common_selector location" value="<?php echo $row['lname']; ?>"  > <?php echo $row['lname']; ?></strong></label>
+                        <label><strong><input type="checkbox" class="common_selector location" value="<?php echo $row['lname_tha']; ?>"  > <?php echo $row['lname_tha']; ?></strong></label>
                     </div>
                     <?php
                     }
@@ -105,7 +105,7 @@ include('database_connection.php');
                     <h2>สถานะอุปกรณ์</h2>
 					<?php
                     $query = "
-                    SELECT DISTINCT(equipment_status) FROM equipment ORDER BY equipment_status DESC
+                    SELECT * FROM status ORDER BY sid   
                     ";
                     $statement = $connect->prepare($query);
                     $statement->execute();
@@ -114,7 +114,7 @@ include('database_connection.php');
                     {
                     ?>
                     <div class="list-group-item csheckbox">
-                        <label><input type="checkbox" class="common_selector status" value="<?php echo $row['equipment_status']; ?>"  > <?php echo $row['equipment_status']; ?></label>
+                        <label><input type="checkbox" class="common_selector status" value="<?php echo $row['status_tha']; ?>"  > <?php echo $row['status_tha']; ?></label>
                     </div>
                     <?php
                     }
