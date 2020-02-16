@@ -11,10 +11,6 @@ include('database_connection.php');
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>รายการอุปกรณ์</title>
     <script src="js/jquery-1.10.2.min.js"></script>
@@ -126,56 +122,55 @@ include('database_connection.php');
                 <div class="row filter_data"> </div>
             </div>
         </div>
-
     </div>
-<style>
-#loading
-{
-	text-align:center; 
-	background: url('loader.gif') no-repeat center; 
-	height: 150px;
-}
-</style>
-
-<script>
-$(document).ready(function(){
-
-    filter_data();
-
-    function filter_data()
+    <style>
+    #loading
     {
-        $('.filter_data').html('<div id="loading" style="" ></div>');
-        var action = 'fetch_data';
-        var category = get_filter('category');
-        var type = get_filter('type');
-        var location = get_filter('location');
-        var status = get_filter('status');
-        $.ajax({
-            url:"fetch_data.php",
-            method:"POST",
-            data:{action:action, category:category, type:type, location:location, status:status},
-            success:function(data){
-                $('.filter_data').html(data);
+        text-align:center; 
+        background: url('loader.gif') no-repeat center; 
+        height: 150px;
+    }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+
+            filter_data();
+
+            function filter_data()
+            {
+                $('.filter_data').html('<div id="loading" style="" ></div>');
+                var action = 'fetch_data';
+                var category = get_filter('category');
+                var type = get_filter('type');
+                var location = get_filter('location');
+                var status = get_filter('status');
+                $.ajax({
+                    url:"fetch_data.php",
+                    method:"POST",
+                    data:{action:action, category:category, type:type, location:location, status:status},
+                    success:function(data){
+                        $('.filter_data').html(data);
+                    }
+                });
             }
-        });
-    }
 
-    function get_filter(class_name)
-    {
-        var filter = [];
-        $('.'+class_name+':checked').each(function(){
-            filter.push($(this).val());
-        });
-        return filter;
-    }
+            function get_filter(class_name)
+            {
+                var filter = [];
+                $('.'+class_name+':checked').each(function(){
+                    filter.push($(this).val());
+                });
+                return filter;
+            }
 
-    $('.common_selector').click(function(){
-        filter_data();
-    });
+            $('.common_selector').click(function(){
+                filter_data();
+            });
 
-});
-</script>
+            });
+        </script>
 
-</body>
+    </body>
 
 </html>

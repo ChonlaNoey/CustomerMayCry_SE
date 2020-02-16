@@ -61,11 +61,11 @@ if(isset($_POST["action"]))
 			}
 			$output .= '
 			<div class="col-sm-4 col-lg-3 col-md-3">
-				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:20px; height:auto;">
+				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:20px; height:350px;">
 					<p align="center"><strong><a href="#">'. $row['eid'] .'</a></strong></p>
 					<img align="center" src="image/'. $row['equipment_image'] .'" alt="" class="img-responsive" >
-					<h4 align="center"><strong><a href="#">'. $row['ename_tha'].'</a></strong></h4>
-					<h4 style="text-align:center;" class="text-danger" >'. $row['cname_tha'] .'</h4>
+					<h4 align="center"><strong><a href="#">'. $row['ename_eng'].'</a></strong></h4>
+					<h4 style="text-align:center;" class="text-danger" >'. $row['cname_eng'] .'</h4>
 					<img align="left" src="image/ico/location.png" alt="" class="img-responsive" width="10%" height="10%" >&nbsp:&nbsp'. $row['lname_tha'] .'<br>
 					<img align="left" src="image/ico/'.$type_ico.'" alt="" class="img-responsive">&nbsp:&nbsp'.$type.'<br>
 					<img align="left" src="image/ico/'.$status_ico.'" alt="" class="img-responsive">&nbsp:&nbsp'.$row['status_tha'].'
@@ -76,7 +76,7 @@ if(isset($_POST["action"]))
 	}
 	else
 	{
-		$output = '<h3>No Data Found</h3>';
+		$output = '<h1 align="center">ไม่พบข้อมูล</h1>';
 	}
 	echo $output;
 }
