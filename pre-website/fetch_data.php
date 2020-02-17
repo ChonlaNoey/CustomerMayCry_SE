@@ -37,7 +37,7 @@ if(isset($_POST["action"]))
 			AND status_tha IN('".$status_filter."')
 		";
 	}
-
+	$query .= " ORDER BY eid ASC";
 	$statement = $connect->prepare($query);
 	$statement->execute();
 	$result = $statement->fetchAll();
@@ -61,7 +61,7 @@ if(isset($_POST["action"]))
 			}
 			$output .= '
 			<div class="col-sm-4 col-lg-3 col-md-3">
-				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:20px; height:350px;">
+				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:20px; height:400px;">
 					<p align="center"><strong><a href="#">'. $row['eid'] .'</a></strong></p>
 					<img align="center" src="image/'. $row['equipment_image'] .'" alt="" class="img-responsive" >
 					<h4 align="center"><strong><a href="#">'. $row['ename_eng'].'</a></strong></h4>
