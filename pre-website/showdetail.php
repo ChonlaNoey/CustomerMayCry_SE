@@ -1,20 +1,86 @@
+<?php
+	include('database_connection.php');
+
+	$query = "
+	SELECT * FROM equipment,category,location,status 
+	WHERE equipment.cid = category.cid AND equipment.lid = location.lid AND equipment.sid = status.sid
+	AND eid='".$_GET['eid']."'";
+	$statement = $connect->prepare($query);
+	$statement->execute();
+	$result = $statement->fetchAll();
+
+	$query = "SELECT * FROM status";
+	$statement = $connect->prepare($query);
+	$statement->execute();
+	$status = $statement->fetchAll();
+
+	if(isset($_REQUEST['submit'])){
+	 $status = $_REQUEST['status_tha'];
+	 $query = mysqli_query("UPDATE status = '$status' WHERE sid = '$sid'");
+	 $statement = $connect->prepare($query);
+	 $statement->execute();
+	 header('location:swordtail.php');
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>รายละเอียดสินค้า</title>
+	<link href="css/new.bootstrap.min.css" rel="stylesheet">		
+	<link href="css/my_custom.css" rel="stylesheet">		
+	<script src="js/custom_script.js"></script>
 </head>
 <body>
-<p align="center">
-	<a href="showdetail.php">แสดงรายละเอียดสินค้า</a>
-</p>
-<table border="1" align="center" width="500">
-	<tr>
-		<td>ชื่อรุ่น</td>
-		<td>สถานะ</td>
-		<td>แก้ไข</td>
-		<td>ลบ</td>
-	</tr>
-<?php
-include('database_connection.php');
-$sql = mysqli_query($connect, "SELECT * FROM equipment WHERE equipment_id = '".$equipment_id."' ");
+	<!-- navigation bar-->
+	<ul>
+        <li>
+            <a style="float:right;" class="nav-logo" href="#">ระบบยืมคืน-อุปกรณ์</a>
+            <a style="color:white; float:left" class="btn-black" onclick="goBack()">Go Back</a>
+        </li>
+    </ul>
+	<p align="center">
+		<h1 align="center" style="color:skyblue;">แสดงรายละเอียดสินค้า</h1>
+	</p>
+
+	<?php
+	foreach($result as $row){?>
+	<center><img align="center" src="image/<?php echo $row['equipment_image']?>" width="25%" height="25%" "class="img-responsive" ></center>
+	<center><label for="status">สถานะอุปกรณ์:</label></center>
+	<center><select id="status"></center>
+	<?php }  
+	foreach($status as $row){
+	?>
+  		<option value="<?php echo $row['sid'] ?>"><?php echo $row['status_tha'] ?></option>
+	<?php }?>
+	</select></center>
+
+	<center><a style="margin-top:10px;" type="submit" name="submit" class="btn btn-outline-primary" >Save</a><button style="margin-top:10px;" type="cancel" class="btn btn-outline-danger">Cancel</button></center>
+	<?php
+	foreach($result as $row){?>
+		<table align="center" width="40px" style="margin-top:10px;" class="table light">
+		<tr>
+			<th scope="row">ชื่อรุ่น</td>
+			<td><?php echo $row['ename_eng'] ?></td>
+		</tr>
+		<tr>
+			<th scope="row">ชนิดอุปกรณ์</td>
+			<td><?php echo $row['cname_eng'] ?></td>
+		</tr>
+		<tr>
+			<th scope="row">สถานะ</td>
+			<td><?php echo $row['status_tha'] ?></td>
+		</tr>
+		<tr>
+			<th scope="row">สถานที่</td>
+			<td><?php echo $row['lname_tha'] ?></td>
+		</tr>
+		<tr>
+			<th scope="row">รูปแบบการยืม</td>
+			<td><?php echo $row['equipment_type'] ?></td>
+		</tr>
+	</table>
+	<?php } ?>
+	</body>
+</html>
