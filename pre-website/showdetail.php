@@ -14,13 +14,11 @@
 	$statement->execute();
 	$status = $statement->fetchAll();
 
-	if(isset($_REQUEST['submit'])){
-	 $status = $_REQUEST['status_tha'];
-	 $query = mysqli_query("UPDATE status = '$status' WHERE sid = '$sid'");
-	 $statement = $connect->prepare($query);
-	 $statement->execute();
-	 header('location:swordtail.php');
-	}
+	if(isset($_REQUEST['save'])){
+		$connct = mysqli_connect('localhost','root','','soften');
+        $value = $_POST['status_tha'];
+        $result = mysqli_query($connect,"UPDATE status SET status_tha = '$value'");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -56,7 +54,7 @@
 	<?php }?>
 	</select></center>
 
-	<center><a style="margin-top:10px;" type="submit" name="submit" class="btn btn-outline-primary" >Save</a><button style="margin-top:10px;" type="cancel" class="btn btn-outline-danger">Cancel</button></center>
+	<center><a style="margin-top:10px;" type="save" name="save" value="save" class="btn btn-outline-primary" >Save</a><button style="margin-top:10px;" type="cancel" class="btn btn-outline-danger">Cancel</button></center>
 	<?php
 	foreach($result as $row){?>
 		<table align="center" width="40px" style="margin-top:10px;" class="table light">
