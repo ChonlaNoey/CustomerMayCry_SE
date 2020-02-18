@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 16, 2020 at 11:38 AM
+-- Generation Time: Feb 18, 2020 at 11:09 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -30,21 +30,25 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `category` (
   `cid` int(10) NOT NULL,
-  `cname` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `cdetail` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+  `prefix` varchar(3) COLLATE utf8_unicode_ci NOT NULL,
+  `cname_tha` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `cname_eng` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `cdetail_tha` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `cdetail_eng` varchar(100) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category` (`cid`, `cname`, `cdetail`) VALUES
-(0, 'Undefined', ''),
-(1, 'Smartphone', ''),
-(2, 'Laptop', ''),
-(3, 'Drone', ''),
-(4, 'Tablet', ''),
-(5, 'GoPro', '');
+INSERT INTO `category` (`cid`, `prefix`, `cname_tha`, `cname_eng`, `cdetail_tha`, `cdetail_eng`) VALUES
+(0, 'UND', 'ไม่ได้ระบุ', 'Undefined', '', ''),
+(1, 'SPH', 'สมาร์ทโฟน', 'Smartphone', '', ''),
+(2, 'LAP', 'แล็ปท็อป', 'Laptop', '', ''),
+(3, 'DR', 'โดรน', 'Drone', '', ''),
+(4, 'TAB', 'แท็บเล็ต', 'Tablet', '', ''),
+(5, 'GP', 'กล้องโกโปร', 'GoPro', '', ''),
+(6, 'PC', 'คอมพิวเตอร์', 'PC', '', '');
 
 -- --------------------------------------------------------
 
@@ -53,26 +57,15 @@ INSERT INTO `category` (`cid`, `cname`, `cdetail`) VALUES
 --
 
 CREATE TABLE `equipment` (
-  `equipment_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `eid` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `cid` int(10) DEFAULT '0',
   `lid` int(10) DEFAULT '1',
+  `sid` int(10) DEFAULT '1',
   `equipment_type` enum('Portable','Unportable','Undefined','') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Undefined',
-  `equipment_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No name',
-  `equipment_status` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'สามารถยืมได้',
+  `ename_eng` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No name',
+  `ename_tha` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'ไม่มีชื่อ',
   `equipment_image` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'no_image.jpeg'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `equipment`
---
-
-INSERT INTO `equipment` (`equipment_id`, `cid`, `lid`, `equipment_type`, `equipment_name`, `equipment_status`, `equipment_image`) VALUES
-('LAP1', 2, 1, 'Portable', 'HP Pavilion G4', 'สามารถยืมได้', 'LAP1.jpg'),
-('PC1', 0, 1, 'Unportable', 'HP Pro Desk', 'สามารถยืมได้', 'no_image.jpeg'),
-('PH1', 1, 1, 'Portable', 'Iphone 6', 'สามารถยืมได้', 'PH1.jpeg'),
-('PH2', 1, 2, 'Portable', 'Iphone 6', 'ถูกยืม', 'PH2.jpeg'),
-('PH3', 1, 1, 'Portable', 'Iphone 6', 'สามารถยืมได้', 'PH3.jpeg'),
-('PH4', 1, 2, 'Portable', 'Iphone 6', 'ถูกยืม', 'PH4.jpeg');
 
 -- --------------------------------------------------------
 
@@ -82,16 +75,40 @@ INSERT INTO `equipment` (`equipment_id`, `cid`, `lid`, `equipment_type`, `equipm
 
 CREATE TABLE `location` (
   `lid` int(10) NOT NULL,
-  `lname` varchar(30) COLLATE utf8_unicode_ci NOT NULL
+  `lname_tha` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `lname_eng` varchar(20) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `location`
 --
 
-INSERT INTO `location` (`lid`, `lname`) VALUES
-(1, 'ห้องเก็บของ'),
-(2, 'อยู่กับผู้ยืม');
+INSERT INTO `location` (`lid`, `lname_tha`, `lname_eng`) VALUES
+(1, 'ห้องเก็บของ', ''),
+(2, 'อยู่กับผู้ยืม', ''),
+(3, 'ส่งซ่อม', ''),
+(4, 'SC8104', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `status`
+--
+
+CREATE TABLE `status` (
+  `sid` int(10) NOT NULL,
+  `status_tha` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `status_eng` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `status`
+--
+
+INSERT INTO `status` (`sid`, `status_tha`, `status_eng`) VALUES
+(1, 'ว่าง', 'Available'),
+(2, 'ถูกยืม', ''),
+(3, 'กำลังซ่อม', 'Fixing');
 
 --
 -- Indexes for dumped tables
@@ -107,15 +124,22 @@ ALTER TABLE `category`
 -- Indexes for table `equipment`
 --
 ALTER TABLE `equipment`
-  ADD PRIMARY KEY (`equipment_id`),
+  ADD PRIMARY KEY (`eid`),
   ADD KEY `equip_cid_fk` (`cid`),
-  ADD KEY `equip_lid_fk` (`lid`);
+  ADD KEY `equip_lid_fk` (`lid`),
+  ADD KEY `equip_sid_fk` (`sid`);
 
 --
 -- Indexes for table `location`
 --
 ALTER TABLE `location`
   ADD PRIMARY KEY (`lid`);
+
+--
+-- Indexes for table `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`sid`);
 
 --
 -- Constraints for dumped tables
@@ -126,7 +150,8 @@ ALTER TABLE `location`
 --
 ALTER TABLE `equipment`
   ADD CONSTRAINT `equip_cid_fk` FOREIGN KEY (`cid`) REFERENCES `category` (`cid`) ON DELETE SET NULL ON UPDATE SET NULL,
-  ADD CONSTRAINT `equip_lid_fk` FOREIGN KEY (`lid`) REFERENCES `location` (`lid`) ON DELETE SET NULL ON UPDATE SET NULL;
+  ADD CONSTRAINT `equip_lid_fk` FOREIGN KEY (`lid`) REFERENCES `location` (`lid`) ON DELETE SET NULL ON UPDATE SET NULL,
+  ADD CONSTRAINT `equip_sid_fk` FOREIGN KEY (`sid`) REFERENCES `status` (`sid`) ON UPDATE SET NULL;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
