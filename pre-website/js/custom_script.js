@@ -13,3 +13,7 @@ function changeCat() {
 function changeEquipDetail() {
     alert("บันทึกสำเร็จ");
 }
+function insertEquip() {
+    alert("เพิ่มอุปกรณ์สำเร็จ");
+}
+
