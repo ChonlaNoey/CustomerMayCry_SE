@@ -16,7 +16,7 @@
         </ul>
         <div class="list-group center btn-group">
                 <a href="list.php" type="button" class="btn btn-secondary btn-lg btn-block">รายการอุปกรณ์</a>
-                <a href="#" type="button" class="btn btn-secondary btn-lg btn-block">เพิ่มอุปกรณ์</a>
+                <a href="insert.php" type="button" class="btn btn-secondary btn-lg btn-block">เพิ่มข้อมูลอุปกรณ์</a>
         </div>
     </body>
 </html>

@@ -44,21 +44,21 @@
         <form method="post">
         <table>
             <tr>
-             <td><label for="eid">Equipment ID:</label></td>
-             <td><input type="text" name="eid" id="eid" placeholder=" AB0" class="bginput"><br></td>
+                <td><label for="eid">Equipment ID:</label></td>
+                <td><input type="text" name="eid" id="eid" placeholder=" AB0" class="bginput"><br></td>
             </tr>
             <tr>
-             <td><label for="ename">Equipment Name:</label></td>
-             <td><input type="text" name="ename" id="ename" placeholder=" English Please!" class="bginput"><br></td>
+                <td><label for="ename">Equipment Name:</label></td>
+                <td><input type="text" name="ename" id="ename" placeholder=" English Please!" class="bginput"><br></td>
             </tr>
             <tr>
-             <td><label for="equipment_type">Equipment Type:</label></td>
-             <td><input type="text" name="equipment_type" id="equipment_type" placeholder=" English Please!" class="bginput"><br></td>
+                <td><label for="equipment_type">Equipment Type:</label></td>
+                <td><input type="text" name="equipment_type" id="equipment_type" placeholder=" English Please!" class="bginput"><br></td>
             </tr>
             <tr>
-             <td><label for="category_type">Category Type:</label></td>
-            <td><select name="cid">
-			<option value=""><-- Please Select Item --></option>
+                <td><label for="category_type">Category Type:</label></td>
+                <td><select name="cid">
+                <option value=""><-- Please Select Item --></option>
                 <?php
                     $query = "SELECT DISTINCT * FROM category";
                     $statement = $connect->prepare($query);
@@ -68,11 +68,11 @@
                     {
                 ?> 
                 <option value="<?php echo $row['cid'];?>"><?php echo $row["cid"]." - ".$row['cname_eng'];?></option>
-                    <?php
+                <?php
                     }
                 ?>
-			
-		    </select><br></td>
+                
+                </select><br></td>
             </tr>
         </table>
         <br><br>
