@@ -17,6 +17,7 @@
 		$eloc = $row['lname_tha'];
 		$ecat = $row['cname_tha'];
 		$cid = $row['cid'];
+		$equip_type = $row['equip_type'];
 	}
 
 	$query = "SELECT * FROM status";
@@ -202,11 +203,11 @@
 								</tr>
 								<tr>
 									<th class="" scope="row">รูปแบบการยืม</td>
-									<td><?php echo $row['equipment_type'] ?></td>
+									<td><?php echo $equip_type ?></td>
 								<tr>
 								
 							</table>
-							<center><button style="margin-left:10px; padding-top:-400px;" onClick="changeEquipDetail()" type="submit" name="btn-submit-detail" id="btn-submit-detail" class="btn btn-dark">บันทึการเปลี่ยนแปลง</button><center><br>
+							<center><button style="margin-left:10px; padding-top:-400px;" onClick="changeEquipDetail()" type="submit" name="btn-submit-detail" id="btn-submit-detail" class="btn btn-dark">บันทึกการเปลี่ยนแปลง</button><center><br>
 						</table>
 					</div>
 				</form>

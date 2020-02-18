@@ -20,7 +20,7 @@ if(isset($_POST["action"]))
 	{
 		$type_filter = implode("','", $_POST["type"]);
 		$query .= "
-			AND equipment_type IN('".$type_filter."')
+			AND equip_type IN('".$type_filter."')
 		";
 	}
 	if(isset($_POST["location"]))
@@ -52,13 +52,12 @@ if(isset($_POST["action"]))
 			}else if($row['status_tha'] != 'ว่าง'){
 				$status_ico = 'unavailable.png" width="10%" height="10%"';
 			}
-			if($row['equipment_type'] == 'Portable'){
-				$type = 'Portable';
+			if($row['equip_type'] == 'สามารถพกพาได้'){
 				$type_ico = 'portable.png" width="10%" height="10%"';
-			}else if($row['equipment_type'] != 'Portable'){
-				$type = 'Unportable';
+			}else if($row['equip_type'] != 'สามารถพกพาได้'){
 				$type_ico = 'unportable.png" width="10%" height="10%"';
 			}
+			$type = $row['equip_type'];
 			$output .= '
 			<div class="col-sm-4 col-lg-3 col-md-3">
 				<div style="border:1px solid #ccc; border-radius:5px; padding:16px; margin-bottom:20px; height:450px;">

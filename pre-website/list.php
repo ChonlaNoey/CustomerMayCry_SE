@@ -28,8 +28,8 @@ include('database_connection.php');
     <!-- navigation bar-->
     <ul>
         <li>
-            <a style="float:right;" class="nav-logo" href="#+">ระบบยืมคืน-อุปกรณ์</a>
-            <a style="float:left;" class="btn-black" onclick="goBack()">Go Back</a>
+            <a style="float:right;" class="nav-logo" href="#">ระบบยืมคืน-อุปกรณ์</a>
+            <a style="float:left;" class="btn-black" href="index.php">Go Back</a>
         </li>
     </ul>
     <!-- Page Content -->
@@ -63,7 +63,7 @@ include('database_connection.php');
                     <h2>ประเภทอุปกรณ์</h2>
 					<?php
                     $query = "
-                    SELECT DISTINCT(equipment_type) FROM equipment ORDER BY equipment_type DESC
+                    SELECT DISTINCT(equip_type) FROM equipment ORDER BY equip_type DESC
                     ";
                     $statement = $connect->prepare($query);
                     $statement->execute();
@@ -72,7 +72,7 @@ include('database_connection.php');
                     {
                     ?>
                     <div class="list-group-item csheckbox">
-                        <label><input type="checkbox" class="common_selector type" value="<?php echo $row['equipment_type']; ?>"  > <?php echo $row['equipment_type']; ?></label>
+                        <label><input type="checkbox" class="common_selector type" value="<?php echo $row['equip_type']; ?>" > <?php echo $row['equip_type']; ?></label>
                     </div>
                     <?php
                     }
