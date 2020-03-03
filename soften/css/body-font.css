@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+a,p,strong,label {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+button,input {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+table,td,tr,th{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
