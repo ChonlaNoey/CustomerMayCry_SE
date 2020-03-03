@@ -1,0 +1,3002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200303 23:49:42.775" rpa="false">
+<suite id="s1" name="regisStaff" source="D:\soften\regisStaff.robot">
+<test id="s1-t1" name="TC001 Open Register page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200303 23:49:43.032" level="INFO">Opening browser 'chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/'.</msg>
+<status status="PASS" starttime="20200303 23:49:43.031" endtime="20200303 23:49:50.214"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:49:50.219" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:49:50.219" endtime="20200303 23:49:50.442"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:49:43.031" endtime="20200303 23:49:50.443" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC002 Select Register Student">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>student</arg>
+</arguments>
+<msg timestamp="20200303 23:49:50.454" level="INFO">Selecting 'student' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:49:50.454" endtime="20200303 23:49:50.487"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:49:50.487" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:49:50.487" endtime="20200303 23:49:51.982"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_form_student.php</arg>
+</arguments>
+<msg timestamp="20200303 23:49:52.001" level="INFO">Current location is 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_form_student.php'.</msg>
+<status status="PASS" starttime="20200303 23:49:51.982" endtime="20200303 23:49:52.001"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200303 23:49:52.001" endtime="20200303 23:49:54.182"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:49:50.447" endtime="20200303 23:49:54.184" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC003 Select Register Staff">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200303 23:49:54.198" level="INFO">Opening browser 'chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/'.</msg>
+<status status="PASS" starttime="20200303 23:49:54.194" endtime="20200303 23:49:58.986"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:49:58.989" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:49:58.989" endtime="20200303 23:49:59.776"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:49:59.783" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:49:59.780" endtime="20200303 23:49:59.905"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:49:59.906" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:49:59.905" endtime="20200303 23:50:02.468"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_form_staff.php</arg>
+</arguments>
+<msg timestamp="20200303 23:50:02.473" level="INFO">Current location is 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_form_staff.php'.</msg>
+<status status="PASS" starttime="20200303 23:50:02.468" endtime="20200303 23:50:02.473"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:49:54.190" endtime="20200303 23:50:02.474" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TC004 Not Select">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>ย้อนกลับ</arg>
+</arguments>
+<msg timestamp="20200303 23:50:02.478" level="INFO">Clicking button 'ย้อนกลับ'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:50:02.798" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:50:02.505" endtime="20200303 23:50:02.799"></status>
+</kw>
+<msg timestamp="20200303 23:50:02.803" level="FAIL">Button with locator 'ย้อนกลับ' not found.</msg>
+<status status="FAIL" starttime="20200303 23:50:02.478" endtime="20200303 23:50:02.803"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:50:02.476" endtime="20200303 23:50:02.804" critical="yes">Button with locator 'ย้อนกลับ' not found.</status>
+</test>
+<test id="s1-t5" name="TC005 Open Register Staff page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200303 23:50:02.807" level="INFO">Opening browser 'chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/'.</msg>
+<status status="PASS" starttime="20200303 23:50:02.806" endtime="20200303 23:50:07.452"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:50:07.459" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:50:07.458" endtime="20200303 23:50:07.716"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:50:02.806" endtime="20200303 23:50:07.716" critical="yes"></status>
+</test>
+<test id="s1-t6" name="TC006 Valid Register Staff">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:50:07.719" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:50:07.719" endtime="20200303 23:50:07.812"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:07.814" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:07.812" endtime="20200303 23:50:09.551"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:50:09.566" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:50:09.565" endtime="20200303 23:50:09.767"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:50:09.767" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:50:09.767" endtime="20200303 23:50:09.874"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:50:09.874" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:50:09.874" endtime="20200303 23:50:10.016"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:10.017" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:50:10.017" endtime="20200303 23:50:10.128"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:10.129" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:50:10.129" endtime="20200303 23:50:10.236"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:50:10.237" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:50:10.237" endtime="20200303 23:50:10.403"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:50:10.404" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:50:10.404" endtime="20200303 23:50:10.544"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:10.545" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:10.545" endtime="20200303 23:50:13.883"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ลงทะเบียนสำเร็จ</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:50:19.314" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:50:18.934" endtime="20200303 23:50:19.314"></status>
+</kw>
+<msg timestamp="20200303 23:50:19.314" level="FAIL">Text 'ลงทะเบียนสำเร็จ' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:50:13.884" endtime="20200303 23:50:19.314"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:50:07.718" endtime="20200303 23:50:19.314" critical="yes">Text 'ลงทะเบียนสำเร็จ' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t7" name="TC007 Open Register Staff page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200303 23:50:19.322" level="INFO">Opening browser 'chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/'.</msg>
+<status status="PASS" starttime="20200303 23:50:19.321" endtime="20200303 23:50:25.585"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:50:25.588" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:50:25.587" endtime="20200303 23:50:25.842"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:50:19.321" endtime="20200303 23:50:25.843" critical="yes"></status>
+</test>
+<test id="s1-t8" name="TC008 Invalid Name">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:50:25.847" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:50:25.847" endtime="20200303 23:50:25.923"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:25.924" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:25.924" endtime="20200303 23:50:27.222"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>456879</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.222" level="INFO">Typing text '456879' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.222" endtime="20200303 23:50:27.370"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.371" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.371" endtime="20200303 23:50:27.467"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.468" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.468" endtime="20200303 23:50:27.612"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.612" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.612" endtime="20200303 23:50:27.712"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.712" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.712" endtime="20200303 23:50:27.801"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.801" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.801" endtime="20200303 23:50:27.902"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:50:27.903" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:50:27.902" endtime="20200303 23:50:28.013"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:28.014" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:28.014" endtime="20200303 23:50:30.679"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:50:36.212" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:50:35.872" endtime="20200303 23:50:36.212"></status>
+</kw>
+<msg timestamp="20200303 23:50:36.212" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:50:30.679" endtime="20200303 23:50:36.212"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:50:25.845" endtime="20200303 23:50:36.221" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t9" name="TC009 Invalid Name(Eng">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:50:36.224" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:50:36.223" endtime="20200303 23:50:37.100"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:50:37.104" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:50:37.104" endtime="20200303 23:50:37.186"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:37.186" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:37.186" endtime="20200303 23:50:38.419"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>Paweena</arg>
+</arguments>
+<msg timestamp="20200303 23:50:38.426" level="INFO">Typing text 'Paweena' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:50:38.424" endtime="20200303 23:50:38.576"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:50:38.577" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:50:38.576" endtime="20200303 23:50:38.677"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:50:38.678" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:50:38.678" endtime="20200303 23:50:38.794"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:38.795" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:50:38.795" endtime="20200303 23:50:38.879"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:38.880" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:50:38.880" endtime="20200303 23:50:38.961"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:50:38.963" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:50:38.962" endtime="20200303 23:50:39.065"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:50:39.066" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:50:39.066" endtime="20200303 23:50:39.167"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:39.167" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:39.167" endtime="20200303 23:50:41.423"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:50:46.929" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:50:46.568" endtime="20200303 23:50:46.929"></status>
+</kw>
+<msg timestamp="20200303 23:50:46.929" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:50:41.424" endtime="20200303 23:50:46.929"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:50:36.222" endtime="20200303 23:50:46.947" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t10" name="TC010 Invalid Name(SpecailChar)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:50:46.957" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:50:46.957" endtime="20200303 23:50:48.074"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:50:48.081" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:50:48.079" endtime="20200303 23:50:48.182"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:48.182" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:48.182" endtime="20200303 23:50:49.512"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณ)</arg>
+</arguments>
+<msg timestamp="20200303 23:50:49.517" level="INFO">Typing text 'ประวีณ)' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:50:49.517" endtime="20200303 23:50:49.683"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:50:49.683" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:50:49.683" endtime="20200303 23:50:49.786"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:50:49.787" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:50:49.787" endtime="20200303 23:50:49.907"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:49.909" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:50:49.908" endtime="20200303 23:50:49.995"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:50:49.996" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:50:49.996" endtime="20200303 23:50:50.132"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:50:50.133" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:50:50.133" endtime="20200303 23:50:50.288"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:50:50.288" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:50:50.288" endtime="20200303 23:50:50.448"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:50.449" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:50.449" endtime="20200303 23:50:52.721"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:50:58.197" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:50:57.838" endtime="20200303 23:50:58.197"></status>
+</kw>
+<msg timestamp="20200303 23:50:58.197" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:50:52.721" endtime="20200303 23:50:58.197"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:50:46.954" endtime="20200303 23:50:58.203" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t11" name="TC011 Invalid Name(Emtpy)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:50:58.207" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:50:58.207" endtime="20200303 23:50:58.286"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:50:58.286" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:50:58.286" endtime="20200303 23:50:58.359"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:50:58.359" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:50:58.359" endtime="20200303 23:50:59.657"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:50:59.660" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:50:59.659" endtime="20200303 23:50:59.878"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:50:59.879" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:50:59.879" endtime="20200303 23:51:00.024"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:00.026" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:00.026" endtime="20200303 23:51:00.180"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:00.181" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:00.181" endtime="20200303 23:51:00.322"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:00.325" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:00.324" endtime="20200303 23:51:00.498"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:00.499" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:00.499" endtime="20200303 23:51:00.593"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:00.593" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:00.593" endtime="20200303 23:51:01.795"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกชื่อ</arg>
+</arguments>
+<status status="PASS" starttime="20200303 23:51:01.795" endtime="20200303 23:51:01.815"></status>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20200303 23:51:01.816" endtime="20200303 23:51:02.956"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:50:58.206" endtime="20200303 23:51:02.957" critical="yes"></status>
+</test>
+<test id="s1-t12" name="TC012 Invalid LastName">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:02.961" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:02.961" endtime="20200303 23:51:03.075"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.075" level="INFO">Typing text '123456' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.075" endtime="20200303 23:51:03.152"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.154" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.153" endtime="20200303 23:51:03.273"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.274" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.274" endtime="20200303 23:51:03.381"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.383" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.383" endtime="20200303 23:51:03.516"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.516" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.516" endtime="20200303 23:51:03.668"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.670" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.669" endtime="20200303 23:51:03.793"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:03.796" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:03.796" endtime="20200303 23:51:06.626"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:51:12.390" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:51:11.734" endtime="20200303 23:51:12.390"></status>
+</kw>
+<msg timestamp="20200303 23:51:12.393" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:51:06.628" endtime="20200303 23:51:12.393"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:51:02.959" endtime="20200303 23:51:12.397" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t13" name="TC013 Invalid LastName(Eng)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:51:12.406" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:51:12.406" endtime="20200303 23:51:12.525"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:51:12.526" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:51:12.526" endtime="20200303 23:51:12.603"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:12.605" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:12.605" endtime="20200303 23:51:13.863"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:13.867" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:13.863" endtime="20200303 23:51:14.008"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>Uying</arg>
+</arguments>
+<msg timestamp="20200303 23:51:14.009" level="INFO">Typing text 'Uying' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:51:14.009" endtime="20200303 23:51:14.129"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:51:14.130" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:14.129" endtime="20200303 23:51:14.269"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:14.271" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:14.271" endtime="20200303 23:51:14.426"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:14.427" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:14.427" endtime="20200303 23:51:14.608"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:14.609" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:14.609" endtime="20200303 23:51:14.835"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:14.836" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:14.836" endtime="20200303 23:51:15.038"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:15.038" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:15.038" endtime="20200303 23:51:16.255"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:51:21.652" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:51:21.308" endtime="20200303 23:51:21.653"></status>
+</kw>
+<msg timestamp="20200303 23:51:21.653" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:51:16.255" endtime="20200303 23:51:21.653"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:51:12.405" endtime="20200303 23:51:21.653" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t14" name="TC014 Invalid LastName(SpecailChar)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:51:21.660" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:51:21.659" endtime="20200303 23:51:21.870"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:51:21.872" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:51:21.872" endtime="20200303 23:51:21.957"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:21.958" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:21.958" endtime="20200303 23:51:23.262"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:23.263" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:23.263" endtime="20200303 23:51:23.433"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:51:23.435" level="INFO">Typing text 'อยู่ ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:51:23.435" endtime="20200303 23:51:23.613"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:51:23.616" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:23.615" endtime="20200303 23:51:23.868"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:23.871" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:23.870" endtime="20200303 23:51:24.031"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:24.032" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:24.032" endtime="20200303 23:51:24.169"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:24.169" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:24.169" endtime="20200303 23:51:24.323"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:24.324" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:24.324" endtime="20200303 23:51:24.476"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:24.477" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:24.477" endtime="20200303 23:51:25.677"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:51:31.129" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:51:30.777" endtime="20200303 23:51:31.129"></status>
+</kw>
+<msg timestamp="20200303 23:51:31.129" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:51:25.679" endtime="20200303 23:51:31.129"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:51:21.658" endtime="20200303 23:51:31.129" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t15" name="TC015 Invalid LastName(Emtpy)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:51:31.139" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:51:31.139" endtime="20200303 23:51:31.201"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:51:31.202" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:51:31.201" endtime="20200303 23:51:31.263"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:31.264" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:31.264" endtime="20200303 23:51:32.487"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:32.490" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:32.489" endtime="20200303 23:51:32.640"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:51:32.640" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:32.640" endtime="20200303 23:51:32.772"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:32.773" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:32.773" endtime="20200303 23:51:32.869"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:32.871" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:32.871" endtime="20200303 23:51:32.955"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:32.955" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:32.955" endtime="20200303 23:51:33.061"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:33.061" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:33.061" endtime="20200303 23:51:33.160"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:33.161" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:33.161" endtime="20200303 23:51:34.651"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกนามสกุล</arg>
+</arguments>
+<status status="PASS" starttime="20200303 23:51:34.651" endtime="20200303 23:51:34.698"></status>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20200303 23:51:34.699" endtime="20200303 23:51:35.844"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:51:31.138" endtime="20200303 23:51:35.850" critical="yes"></status>
+</test>
+<test id="s1-t16" name="TC016 Invalid Email">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:35.862" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:35.861" endtime="20200303 23:51:36.032"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.033" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.033" endtime="20200303 23:51:36.140"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>songchan@gmail.com</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.141" level="INFO">Typing text 'songchan@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.141" endtime="20200303 23:51:36.275"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.276" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.275" endtime="20200303 23:51:36.362"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.362" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.362" endtime="20200303 23:51:36.446"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.447" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.447" endtime="20200303 23:51:36.543"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.543" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.543" endtime="20200303 23:51:36.648"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:36.648" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:36.648" endtime="20200303 23:51:39.446"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:51:45.142" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:51:44.471" endtime="20200303 23:51:45.142"></status>
+</kw>
+<msg timestamp="20200303 23:51:45.159" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:51:39.446" endtime="20200303 23:51:45.159"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:51:35.856" endtime="20200303 23:51:45.159" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t17" name="TC017 Invalid Email(No@)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:51:45.173" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:51:45.170" endtime="20200303 23:51:45.313"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:51:45.314" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:51:45.314" endtime="20200303 23:51:45.409"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:45.409" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:45.409" endtime="20200303 23:51:46.670"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:46.670" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:46.670" endtime="20200303 23:51:46.797"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:51:46.797" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:51:46.797" endtime="20200303 23:51:46.911"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweenakku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:51:46.912" level="INFO">Typing text 'paweenakku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:46.912" endtime="20200303 23:51:46.990"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:46.991" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:46.991" endtime="20200303 23:51:47.069"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:47.070" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:47.070" endtime="20200303 23:51:47.163"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:47.163" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:47.163" endtime="20200303 23:51:47.274"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:47.274" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:47.274" endtime="20200303 23:51:47.378"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:47.379" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:47.379" endtime="20200303 23:51:48.579"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:51:54.121" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:51:53.776" endtime="20200303 23:51:54.122"></status>
+</kw>
+<msg timestamp="20200303 23:51:54.122" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:51:48.580" endtime="20200303 23:51:54.122"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:51:45.168" endtime="20200303 23:51:54.124" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t18" name="TC018 Invalid Email(@kkumail)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:51:54.128" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:51:54.127" endtime="20200303 23:51:54.195"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:51:54.197" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:51:54.196" endtime="20200303 23:51:54.272"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:54.272" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:54.272" endtime="20200303 23:51:55.827"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:51:55.831" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:51:55.830" endtime="20200303 23:51:55.943"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:51:55.943" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:51:55.943" endtime="20200303 23:51:56.045"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kkumail.com</arg>
+</arguments>
+<msg timestamp="20200303 23:51:56.047" level="INFO">Typing text 'paweena@kkumail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:51:56.047" endtime="20200303 23:51:56.204"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:56.205" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:51:56.204" endtime="20200303 23:51:56.328"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:51:56.328" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:51:56.328" endtime="20200303 23:51:56.435"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:51:56.436" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:51:56.436" endtime="20200303 23:51:56.559"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:51:56.560" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:51:56.560" endtime="20200303 23:51:56.675"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:51:56.675" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:51:56.675" endtime="20200303 23:51:58.938"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:52:04.415" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:52:04.084" endtime="20200303 23:52:04.420"></status>
+</kw>
+<msg timestamp="20200303 23:52:04.420" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:51:58.938" endtime="20200303 23:52:04.420"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:51:54.127" endtime="20200303 23:52:04.422" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t19" name="TC019 Invalid Email(Emtpy)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:52:04.425" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:52:04.424" endtime="20200303 23:52:04.494"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:52:04.496" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:52:04.494" endtime="20200303 23:52:04.568"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:04.569" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:04.569" endtime="20200303 23:52:05.863"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:52:05.866" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:52:05.865" endtime="20200303 23:52:05.986"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:52:05.986" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:52:05.986" endtime="20200303 23:52:06.107"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:52:06.108" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:52:06.108" endtime="20200303 23:52:06.223"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:52:06.225" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:52:06.224" endtime="20200303 23:52:06.341"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:52:06.342" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:52:06.341" endtime="20200303 23:52:06.497"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:52:06.498" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:52:06.498" endtime="20200303 23:52:06.615"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:06.616" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:06.616" endtime="20200303 23:52:08.366"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกอีเมล</arg>
+</arguments>
+<status status="PASS" starttime="20200303 23:52:08.366" endtime="20200303 23:52:08.406"></status>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20200303 23:52:08.406" endtime="20200303 23:52:10.485"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:52:04.424" endtime="20200303 23:52:10.488" critical="yes"></status>
+</test>
+<test id="s1-t20" name="TC020 Invalid Password">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:52:10.505" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:52:10.505" endtime="20200303 23:52:10.832"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:52:10.832" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:52:10.832" endtime="20200303 23:52:10.957"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:52:10.958" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:52:10.957" endtime="20200303 23:52:11.151"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee3</arg>
+</arguments>
+<msg timestamp="20200303 23:52:11.151" level="INFO">Typing text 'Pawee3' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:52:11.151" endtime="20200303 23:52:11.268"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee3</arg>
+</arguments>
+<msg timestamp="20200303 23:52:11.269" level="INFO">Typing text 'Pawee3' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:52:11.269" endtime="20200303 23:52:11.346"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:52:11.346" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:52:11.346" endtime="20200303 23:52:11.440"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:52:11.440" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:52:11.440" endtime="20200303 23:52:11.544"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:11.545" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:11.545" endtime="20200303 23:52:13.780"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:52:19.266" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:52:18.911" endtime="20200303 23:52:19.266"></status>
+</kw>
+<msg timestamp="20200303 23:52:19.266" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:52:13.780" endtime="20200303 23:52:19.266"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:52:10.502" endtime="20200303 23:52:19.266" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t21" name="TC021 Invalid Password(LessThan8)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:52:19.276" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:52:19.276" endtime="20200303 23:52:19.339"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:52:19.341" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:52:19.340" endtime="20200303 23:52:19.420"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:19.420" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:19.420" endtime="20200303 23:52:20.654"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:52:20.657" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:52:20.655" endtime="20200303 23:52:20.785"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:52:20.785" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:52:20.785" endtime="20200303 23:52:20.895"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:52:20.896" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:52:20.896" endtime="20200303 23:52:21.022"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee12</arg>
+</arguments>
+<msg timestamp="20200303 23:52:21.024" level="INFO">Typing text 'Pawee12' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:52:21.023" endtime="20200303 23:52:21.132"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee12</arg>
+</arguments>
+<msg timestamp="20200303 23:52:21.133" level="INFO">Typing text 'Pawee12' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:52:21.133" endtime="20200303 23:52:21.267"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:52:21.267" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:52:21.267" endtime="20200303 23:52:21.433"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:52:21.434" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:52:21.433" endtime="20200303 23:52:21.535"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:21.535" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:21.535" endtime="20200303 23:52:22.801"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:52:28.410" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:52:27.983" endtime="20200303 23:52:28.410"></status>
+</kw>
+<msg timestamp="20200303 23:52:28.410" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:52:22.802" endtime="20200303 23:52:28.410"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:52:19.275" endtime="20200303 23:52:28.410" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t22" name="TC022 Invalid Password(MoreThan8)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:52:28.430" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:52:28.430" endtime="20200303 23:52:29.092"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:52:29.092" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:52:29.092" endtime="20200303 23:52:29.182"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:29.182" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:29.182" endtime="20200303 23:52:30.414"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:52:30.417" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:52:30.416" endtime="20200303 23:52:30.574"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:52:30.574" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:52:30.574" endtime="20200303 23:52:30.838"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:52:30.843" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:52:30.842" endtime="20200303 23:52:31.280"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321654987U</arg>
+</arguments>
+<msg timestamp="20200303 23:52:31.281" level="INFO">Typing text 'Pawee321654987U' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:52:31.281" endtime="20200303 23:52:31.588"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321654987U</arg>
+</arguments>
+<msg timestamp="20200303 23:52:31.589" level="INFO">Typing text 'Pawee321654987U' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:52:31.588" endtime="20200303 23:52:31.691"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:52:31.691" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:52:31.691" endtime="20200303 23:52:31.789"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:52:31.790" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:52:31.790" endtime="20200303 23:52:31.893"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:31.893" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:31.893" endtime="20200303 23:52:34.155"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:52:39.810" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:52:39.313" endtime="20200303 23:52:39.810"></status>
+</kw>
+<msg timestamp="20200303 23:52:39.810" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:52:34.156" endtime="20200303 23:52:39.810"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:52:28.428" endtime="20200303 23:52:39.820" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t23" name="TC023 Invalid Password(SmallChar)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:52:39.837" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:52:39.835" endtime="20200303 23:52:39.948"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:52:39.950" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:52:39.949" endtime="20200303 23:52:40.020"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:40.020" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:40.020" endtime="20200303 23:52:41.284"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.288" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.287" endtime="20200303 23:52:41.406"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.406" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.406" endtime="20200303 23:52:41.513"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.514" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.514" endtime="20200303 23:52:41.651"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.652" level="INFO">Typing text 'pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.652" endtime="20200303 23:52:41.740"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.740" level="INFO">Typing text 'pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.740" endtime="20200303 23:52:41.822"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.823" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.823" endtime="20200303 23:52:41.920"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:52:41.921" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:52:41.921" endtime="20200303 23:52:42.020"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:42.021" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:42.021" endtime="20200303 23:52:44.368"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:52:49.843" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:52:49.469" endtime="20200303 23:52:49.843"></status>
+</kw>
+<msg timestamp="20200303 23:52:49.843" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:52:44.368" endtime="20200303 23:52:49.843"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:52:39.830" endtime="20200303 23:52:49.845" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t24" name="TC024 Invalid Password(LargeChar)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:52:49.848" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:52:49.848" endtime="20200303 23:52:49.911"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:52:49.917" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:52:49.916" endtime="20200303 23:52:49.986"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:49.986" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:49.986" endtime="20200303 23:52:51.241"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.242" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.242" endtime="20200303 23:52:51.337"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.338" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.338" endtime="20200303 23:52:51.421"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.421" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.421" endtime="20200303 23:52:51.528"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>PAWEE321</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.530" level="INFO">Typing text 'PAWEE321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.530" endtime="20200303 23:52:51.615"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>PAWEE321</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.616" level="INFO">Typing text 'PAWEE321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.616" endtime="20200303 23:52:51.705"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.706" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.706" endtime="20200303 23:52:51.798"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.798" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.798" endtime="20200303 23:52:51.893"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:52:51.894" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:52:51.894" endtime="20200303 23:52:55.014"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:00.608" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:00.207" endtime="20200303 23:53:00.608"></status>
+</kw>
+<msg timestamp="20200303 23:53:00.608" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:52:55.014" endtime="20200303 23:53:00.608"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:52:49.847" endtime="20200303 23:53:00.610" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t25" name="TC025 Invalid Password(NoNum)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:53:00.612" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:53:00.612" endtime="20200303 23:53:00.687"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:53:00.689" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:53:00.688" endtime="20200303 23:53:00.763"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:00.764" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:00.764" endtime="20200303 23:53:01.989"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.001" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.000" endtime="20200303 23:53:02.136"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.137" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.137" endtime="20200303 23:53:02.267"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.268" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.268" endtime="20200303 23:53:02.439"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>PaweenaU</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.442" level="INFO">Typing text 'PaweenaU' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.440" endtime="20200303 23:53:02.572"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>PaweenaU</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.575" level="INFO">Typing text 'PaweenaU' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.573" endtime="20200303 23:53:02.706"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.707" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.706" endtime="20200303 23:53:02.864"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:53:02.866" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:02.865" endtime="20200303 23:53:03.020"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:03.021" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:03.021" endtime="20200303 23:53:05.285"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:10.875" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:10.374" endtime="20200303 23:53:10.875"></status>
+</kw>
+<msg timestamp="20200303 23:53:10.883" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:53:05.287" endtime="20200303 23:53:10.884"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:53:00.611" endtime="20200303 23:53:10.887" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t26" name="TC026 Invalid Password(NoChar)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:53:10.898" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:53:10.897" endtime="20200303 23:53:11.017"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:53:11.019" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:53:11.019" endtime="20200303 23:53:11.073"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:11.074" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:11.074" endtime="20200303 23:53:12.276"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.279" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.276" endtime="20200303 23:53:12.399"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.400" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.400" endtime="20200303 23:53:12.474"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.476" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.475" endtime="20200303 23:53:12.552"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>32165423</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.553" level="INFO">Typing text '32165423' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.553" endtime="20200303 23:53:12.643"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>32165423</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.643" level="INFO">Typing text '32165423' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.643" endtime="20200303 23:53:12.711"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.711" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.711" endtime="20200303 23:53:12.810"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.810" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.810" endtime="20200303 23:53:12.902"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:12.903" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:12.903" endtime="20200303 23:53:14.124"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:19.704" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:19.338" endtime="20200303 23:53:19.704"></status>
+</kw>
+<msg timestamp="20200303 23:53:19.704" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:53:14.124" endtime="20200303 23:53:19.704"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:53:10.888" endtime="20200303 23:53:19.704" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t27" name="TC027 Invalid Password(Empty)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:53:19.704" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:53:19.704" endtime="20200303 23:53:19.805"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:53:19.807" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:53:19.806" endtime="20200303 23:53:19.878"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:19.878" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:19.878" endtime="20200303 23:53:21.184"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:21.193" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:21.193" endtime="20200303 23:53:21.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:21.330" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:21.330" endtime="20200303 23:53:21.456"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:21.456" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:21.456" endtime="20200303 23:53:21.618"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:21.619" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:21.618" endtime="20200303 23:53:21.760"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:53:21.762" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:21.762" endtime="20200303 23:53:21.918"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:21.919" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:21.918" endtime="20200303 23:53:23.241"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกรหัสผ่านให้ถูกต้อง</arg>
+</arguments>
+<status status="PASS" starttime="20200303 23:53:23.242" endtime="20200303 23:53:23.305"></status>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20200303 23:53:23.305" endtime="20200303 23:53:24.567"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:53:19.704" endtime="20200303 23:53:24.568" critical="yes"></status>
+</test>
+<test id="s1-t28" name="TC028 Invalid Con-Password(Empty)">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:24.580" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:24.579" endtime="20200303 23:53:24.694"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:24.694" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:24.694" endtime="20200303 23:53:24.793"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:24.794" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:24.794" endtime="20200303 23:53:24.914"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:24.914" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:24.914" endtime="20200303 23:53:25.007"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:25.007" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:25.007" endtime="20200303 23:53:25.098"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:53:25.099" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:25.099" endtime="20200303 23:53:25.199"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:25.200" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:25.200" endtime="20200303 23:53:26.423"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกรหัสผ่านให้ถูกต้อง</arg>
+</arguments>
+<status status="PASS" starttime="20200303 23:53:26.423" endtime="20200303 23:53:26.450"></status>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20200303 23:53:26.451" endtime="20200303 23:53:27.594"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:53:24.577" endtime="20200303 23:53:27.604" critical="yes"></status>
+</test>
+<test id="s1-t29" name="TC029 Invalid Position(Empty)">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:27.613" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:27.612" endtime="20200303 23:53:27.800"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:27.801" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:27.800" endtime="20200303 23:53:27.895"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:27.896" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:27.896" endtime="20200303 23:53:28.009"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:28.009" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:28.009" endtime="20200303 23:53:28.093"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:28.093" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:53:28.093" endtime="20200303 23:53:28.175"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:28.176" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:28.176" endtime="20200303 23:53:28.268"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-2355</arg>
+</arguments>
+<msg timestamp="20200303 23:53:28.269" level="INFO">Typing text '063-006-2355' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:28.269" endtime="20200303 23:53:28.363"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:28.365" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:28.364" endtime="20200303 23:53:31.003"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกที่อยู่</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:36.485" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:36.136" endtime="20200303 23:53:36.485"></status>
+</kw>
+<msg timestamp="20200303 23:53:36.485" level="FAIL">Text 'กรุณากรอกที่อยู่' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:53:31.003" endtime="20200303 23:53:36.485"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:53:27.611" endtime="20200303 23:53:36.485" critical="yes">Text 'กรุณากรอกที่อยู่' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t30" name="TC030 Invalid PhoneNum">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:36.496" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:36.834" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:36.506" endtime="20200303 23:53:36.834"></status>
+</kw>
+<msg timestamp="20200303 23:53:36.837" level="FAIL">Element with locator 'fname' not found.</msg>
+<status status="FAIL" starttime="20200303 23:53:36.495" endtime="20200303 23:53:36.837"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:53:36.495" endtime="20200303 23:53:36.838" critical="yes">Element with locator 'fname' not found.</status>
+</test>
+<test id="s1-t31" name="TC031 Invalid PhoneNum(LessThan10)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:53:36.842" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:53:36.841" endtime="20200303 23:53:36.922"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:53:36.923" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:53:36.923" endtime="20200303 23:53:37.017"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:37.017" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:37.017" endtime="20200303 23:53:38.259"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.263" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.263" endtime="20200303 23:53:38.364"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.365" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.364" endtime="20200303 23:53:38.454"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.454" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.454" endtime="20200303 23:53:38.569"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.569" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.569" endtime="20200303 23:53:38.654"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.654" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.654" endtime="20200303 23:53:38.737"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.737" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.737" endtime="20200303 23:53:38.832"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-235</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.832" level="INFO">Typing text '063-006-235' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.832" endtime="20200303 23:53:38.931"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:38.932" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:38.932" endtime="20200303 23:53:41.488"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:47.609" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:46.664" endtime="20200303 23:53:47.610"></status>
+</kw>
+<msg timestamp="20200303 23:53:47.613" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:53:41.488" endtime="20200303 23:53:47.614"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:53:36.841" endtime="20200303 23:53:47.617" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t32" name="TC032 Invalid PhoneNum(MoreThan10)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:53:47.629" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:53:47.629" endtime="20200303 23:53:47.769"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:53:47.771" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:53:47.770" endtime="20200303 23:53:47.849"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:47.849" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:47.849" endtime="20200303 23:53:49.066"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.070" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.069" endtime="20200303 23:53:49.262"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.264" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.263" endtime="20200303 23:53:49.371"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.371" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.371" endtime="20200303 23:53:49.488"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.489" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.488" endtime="20200303 23:53:49.628"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.629" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.629" endtime="20200303 23:53:49.751"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.751" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.751" endtime="20200303 23:53:49.892"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-006-23655</arg>
+</arguments>
+<msg timestamp="20200303 23:53:49.893" level="INFO">Typing text '063-006-23655' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:53:49.893" endtime="20200303 23:53:50.036"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:50.037" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:50.037" endtime="20200303 23:53:51.288"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ข้อมูลไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:53:56.778" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:53:56.458" endtime="20200303 23:53:56.778"></status>
+</kw>
+<msg timestamp="20200303 23:53:56.779" level="FAIL">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:53:51.291" endtime="20200303 23:53:56.779"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:53:47.627" endtime="20200303 23:53:56.779" critical="yes">Text 'ข้อมูลไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t33" name="TC033 Invalid PhoneNum(Emtpy)">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php</arg>
+</arguments>
+<msg timestamp="20200303 23:53:56.784" level="INFO">Opening url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/Register_status.php'</msg>
+<status status="PASS" starttime="20200303 23:53:56.784" endtime="20200303 23:53:56.835"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>status</arg>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200303 23:53:56.836" level="INFO">Selecting 'staff' from radio button 'status'.</msg>
+<status status="PASS" starttime="20200303 23:53:56.835" endtime="20200303 23:53:56.889"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:56.890" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:56.890" endtime="20200303 23:53:58.093"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ประวีณา</arg>
+</arguments>
+<msg timestamp="20200303 23:53:58.096" level="INFO">Typing text 'ประวีณา' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:53:58.095" endtime="20200303 23:53:58.233"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่ยิ่ง</arg>
+</arguments>
+<msg timestamp="20200303 23:53:58.233" level="INFO">Typing text 'อยู่ยิ่ง' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:53:58.233" endtime="20200303 23:53:58.384"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>paweena@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200303 23:53:58.385" level="INFO">Typing text 'paweena@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:53:58.385" endtime="20200303 23:53:58.562"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:58.563" level="INFO">Typing text 'Pawee321' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:53:58.563" endtime="20200303 23:53:58.694"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>confirm</arg>
+<arg>Pawee321</arg>
+</arguments>
+<msg timestamp="20200303 23:53:58.694" level="INFO">Typing text 'Pawee321' into text field 'confirm'.</msg>
+<status status="PASS" starttime="20200303 23:53:58.694" endtime="20200303 23:53:58.863"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>218 ม.12 ต.ศิลา</arg>
+<arg>อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200303 23:53:58.864" level="INFO">Typing text '218 ม.12 ต.ศิลา' into text field 'address'.</msg>
+<status status="PASS" starttime="20200303 23:53:58.864" endtime="20200303 23:53:59.189"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:53:59.193" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:53:59.192" endtime="20200303 23:54:01.563"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกเบอร์โทรศัพท์</arg>
+</arguments>
+<status status="PASS" starttime="20200303 23:54:01.563" endtime="20200303 23:54:01.605"></status>
+</kw>
+<status status="PASS" starttime="20200303 23:53:56.783" endtime="20200303 23:54:01.605" critical="yes"></status>
+</test>
+<test id="s1-t34" name="TC034 Invalid All(Empty)">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:54:01.610" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:54:01.610" endtime="20200303 23:54:01.741"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>กรุณากรอกชื่อ</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:54:07.237" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:54:06.860" endtime="20200303 23:54:07.237"></status>
+</kw>
+<msg timestamp="20200303 23:54:07.237" level="FAIL">Text 'กรุณากรอกชื่อ' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:54:01.742" endtime="20200303 23:54:07.237"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:54:01.609" endtime="20200303 23:54:07.239" critical="yes">Text 'กรุณากรอกชื่อ' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t35" name="TC035 Invalid All">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>456879</arg>
+</arguments>
+<msg timestamp="20200303 23:54:07.242" level="INFO">Typing text '456879' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200303 23:54:07.242" endtime="20200303 23:54:07.367"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20200303 23:54:07.368" level="INFO">Typing text '123456' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200303 23:54:07.367" endtime="20200303 23:54:07.488"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>songchan@gmail.com</arg>
+</arguments>
+<msg timestamp="20200303 23:54:07.489" level="INFO">Typing text 'songchan@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20200303 23:54:07.489" endtime="20200303 23:54:07.659"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>Pawee3</arg>
+</arguments>
+<msg timestamp="20200303 23:54:07.660" level="INFO">Typing text 'Pawee3' into text field 'password'.</msg>
+<status status="PASS" starttime="20200303 23:54:07.660" endtime="20200303 23:54:07.777"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>063-*06-2@55</arg>
+</arguments>
+<msg timestamp="20200303 23:54:07.778" level="INFO">Typing text '063-*06-2@55' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200303 23:54:07.778" endtime="20200303 23:54:07.924"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200303 23:54:07.925" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200303 23:54:07.924" endtime="20200303 23:54:09.184"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>ชื่อไม่ถูกต้อง</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200303 23:54:14.684" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200303 23:54:14.339" endtime="20200303 23:54:14.684"></status>
+</kw>
+<msg timestamp="20200303 23:54:14.684" level="FAIL">Text 'ชื่อไม่ถูกต้อง' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20200303 23:54:09.185" endtime="20200303 23:54:14.684"></status>
+</kw>
+<status status="FAIL" starttime="20200303 23:54:07.241" endtime="20200303 23:54:14.684" critical="yes">Text 'ชื่อไม่ถูกต้อง' did not appear in 5 seconds.</status>
+</test>
+<status status="FAIL" starttime="20200303 23:49:42.778" endtime="20200303 23:54:14.702"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="24">Critical Tests</stat>
+<stat pass="11" fail="24">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="11" fail="24" id="s1" name="regisStaff">regisStaff</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
