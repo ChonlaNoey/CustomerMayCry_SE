@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200317 20:52:58.333" rpa="false">
+<suite id="s1" name="Edit Admin Staff" source="D:\3_02\softEn\Sprint3\EditByAdmin\Staff\Edit_Admin_Staff.robot">
+<test id="s1-t1" name="Open Edit Profile page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOG_IN}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200317 20:52:58.541" level="INFO">Opening browser 'Chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/index.php'.</msg>
+<status status="PASS" starttime="20200317 20:52:58.541" endtime="20200317 20:53:06.548"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200317 20:53:06.552" level="INFO">Clicking element 'staff'.</msg>
+<status status="PASS" starttime="20200317 20:53:06.551" endtime="20200317 20:53:06.696"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>admin@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200317 20:53:06.697" level="INFO">Typing text 'admin@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200317 20:53:06.697" endtime="20200317 20:53:06.830"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>adminKKU123</arg>
+</arguments>
+<msg timestamp="20200317 20:53:06.830" level="INFO">Typing text 'adminKKU123' into text field 'password'.</msg>
+<status status="PASS" starttime="20200317 20:53:06.830" endtime="20200317 20:53:06.940"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200317 20:53:06.941" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200317 20:53:06.941" endtime="20200317 20:53:11.421"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>userManage</arg>
+</arguments>
+<msg timestamp="20200317 20:53:11.423" level="INFO">Clicking element 'userManage'.</msg>
+<status status="PASS" starttime="20200317 20:53:11.422" endtime="20200317 20:53:12.897"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${LIST_ACCOUNT}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:12.905" level="INFO">Current location is 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/user_manager.php'.</msg>
+<status status="PASS" starttime="20200317 20:53:12.898" endtime="20200317 20:53:12.906"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:14.908" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:12.906" endtime="20200317 20:53:14.908"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>staff-tab</arg>
+</arguments>
+<msg timestamp="20200317 20:53:14.909" level="INFO">Clicking element 'staff-tab'.</msg>
+<status status="PASS" starttime="20200317 20:53:14.909" endtime="20200317 20:53:14.987"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:15.989" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200317 20:53:14.988" endtime="20200317 20:53:15.989"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>staffEdit1</arg>
+</arguments>
+<msg timestamp="20200317 20:53:15.990" level="INFO">Clicking element 'staffEdit1'.</msg>
+<status status="PASS" starttime="20200317 20:53:15.990" endtime="20200317 20:53:17.355"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${EDIT_STAFF}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.374" level="INFO">Current location is 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/staff_edit_profile_by_admin.php?email=paweena@kku.ac.th'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.356" endtime="20200317 20:53:17.374"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:52:58.540" endtime="20200317 20:53:17.375" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Empty Edit Profile Staff">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.382" level="INFO">Typing text '' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.382" endtime="20200317 20:53:17.469"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.470" level="INFO">Typing text '' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.470" endtime="20200317 20:53:17.540"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.541" level="INFO">Typing text '' into text field 'email'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.540" endtime="20200317 20:53:17.608"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>addr</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.609" level="INFO">Typing text '' into text field 'addr'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.608" endtime="20200317 20:53:17.680"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.683" level="INFO">Typing text '' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.683" endtime="20200317 20:53:17.761"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>save</arg>
+</arguments>
+<msg timestamp="20200317 20:53:17.762" level="INFO">Clicking button 'save'.</msg>
+<status status="PASS" starttime="20200317 20:53:17.761" endtime="20200317 20:53:17.847"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:19.850" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:17.849" endtime="20200317 20:53:19.850"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-prof</arg>
+</arguments>
+<msg timestamp="20200317 20:53:19.852" level="INFO">Clicking button 'btn-submit-prof'.</msg>
+<status status="PASS" starttime="20200317 20:53:19.852" endtime="20200317 20:53:22.195"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${SAVE}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:22.196" endtime="20200317 20:53:22.217"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:17.380" endtime="20200317 20:53:22.219" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Cancel Edit Profile Staff">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ปราณี</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.224" level="INFO">Typing text 'ปราณี' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200317 20:53:22.224" endtime="20200317 20:53:22.321"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่นาน</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.321" level="INFO">Typing text 'อยู่นาน' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200317 20:53:22.321" endtime="20200317 20:53:22.415"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>pawee@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.416" level="INFO">Typing text 'pawee@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200317 20:53:22.416" endtime="20200317 20:53:22.534"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>addr</arg>
+<arg>21 ม.2 ต.ศิลา อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.535" level="INFO">Typing text '21 ม.2 ต.ศิลา อ.เมือง จ.ขอนแก่น 40000' into text field 'addr'.</msg>
+<status status="PASS" starttime="20200317 20:53:22.535" endtime="20200317 20:53:22.692"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>0963216545</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.693" level="INFO">Typing text '0963216545' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200317 20:53:22.693" endtime="20200317 20:53:22.795"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>xpath=//select[@id="positionId"]</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.795" level="INFO">Selecting options from selection list 'xpath=//select[@id="positionId"]' by value 1.</msg>
+<status status="PASS" starttime="20200317 20:53:22.795" endtime="20200317 20:53:22.844"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>save</arg>
+</arguments>
+<msg timestamp="20200317 20:53:22.845" level="INFO">Clicking button 'save'.</msg>
+<status status="PASS" starttime="20200317 20:53:22.845" endtime="20200317 20:53:22.929"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:24.931" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:22.929" endtime="20200317 20:53:24.931"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>cancel-prof</arg>
+</arguments>
+<msg timestamp="20200317 20:53:24.932" level="INFO">Clicking button 'cancel-prof'.</msg>
+<status status="PASS" starttime="20200317 20:53:24.932" endtime="20200317 20:53:25.039"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${SAVE}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:25.040" endtime="20200317 20:53:25.054"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>แก้ไขโปรไฟล์ของบุคลากร</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.064" level="INFO">Page title is 'แก้ไขโปรไฟล์ของบุคลากร'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.055" endtime="20200317 20:53:25.064"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:22.223" endtime="20200317 20:53:25.065" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Valid Edit Profile Staff">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>fname</arg>
+<arg>ปราณี</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.069" level="INFO">Typing text 'ปราณี' into text field 'fname'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.069" endtime="20200317 20:53:25.184"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>lname</arg>
+<arg>อยู่นาน</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.186" level="INFO">Typing text 'อยู่นาน' into text field 'lname'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.185" endtime="20200317 20:53:25.311"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>pawee@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.312" level="INFO">Typing text 'pawee@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.311" endtime="20200317 20:53:25.486"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>addr</arg>
+<arg>21 ม.2 ต.ศิลา อ.เมือง จ.ขอนแก่น 40000</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.487" level="INFO">Typing text '21 ม.2 ต.ศิลา อ.เมือง จ.ขอนแก่น 40000' into text field 'addr'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.486" endtime="20200317 20:53:25.640"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>mobile</arg>
+<arg>0963216545</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.641" level="INFO">Typing text '0963216545' into text field 'mobile'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.641" endtime="20200317 20:53:25.743"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>xpath=//select[@id="positionId"]</arg>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.744" level="INFO">Selecting options from selection list 'xpath=//select[@id="positionId"]' by value 1.</msg>
+<status status="PASS" starttime="20200317 20:53:25.744" endtime="20200317 20:53:25.782"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>save</arg>
+</arguments>
+<msg timestamp="20200317 20:53:25.783" level="INFO">Clicking button 'save'.</msg>
+<status status="PASS" starttime="20200317 20:53:25.783" endtime="20200317 20:53:25.839"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:27.840" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:25.839" endtime="20200317 20:53:27.841"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-prof</arg>
+</arguments>
+<msg timestamp="20200317 20:53:27.843" level="INFO">Clicking button 'btn-submit-prof'.</msg>
+<status status="PASS" starttime="20200317 20:53:27.842" endtime="20200317 20:53:30.111"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${SAVE}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:30.112" endtime="20200317 20:53:30.132"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:25.068" endtime="20200317 20:53:30.132" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Valid Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:53:30.141" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:53:30.140" endtime="20200317 20:53:30.239"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:32.242" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:30.240" endtime="20200317 20:53:32.242"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:53:32.245" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:53:32.244" endtime="20200317 20:53:34.678"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${PASS_SAVE}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:34.679" endtime="20200317 20:53:34.702"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:36.704" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:34.703" endtime="20200317 20:53:36.704"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:30.136" endtime="20200317 20:53:36.706" critical="yes"></status>
+</test>
+<test id="s1-t6" name="No Big Character In Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:53:36.714" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:53:36.714" endtime="20200317 20:53:36.867"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:38.869" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:36.869" endtime="20200317 20:53:38.869"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>psw</arg>
+<arg>pawee321</arg>
+</arguments>
+<msg timestamp="20200317 20:53:38.871" level="INFO">Typing text 'pawee321' into text field 'psw'.</msg>
+<status status="PASS" starttime="20200317 20:53:38.871" endtime="20200317 20:53:39.049"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>repsw</arg>
+<arg>pawee321</arg>
+</arguments>
+<msg timestamp="20200317 20:53:39.050" level="INFO">Typing text 'pawee321' into text field 'repsw'.</msg>
+<status status="PASS" starttime="20200317 20:53:39.050" endtime="20200317 20:53:39.165"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:53:39.166" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:53:39.165" endtime="20200317 20:53:41.368"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_PASS}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:41.369" endtime="20200317 20:53:41.393"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:43.395" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:41.394" endtime="20200317 20:53:43.395"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:36.711" endtime="20200317 20:53:43.396" critical="yes"></status>
+</test>
+<test id="s1-t7" name="No Small Character In Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:53:43.405" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:53:43.404" endtime="20200317 20:53:43.580"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:45.583" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:43.581" endtime="20200317 20:53:45.584"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>psw</arg>
+<arg>PAWEE321</arg>
+</arguments>
+<msg timestamp="20200317 20:53:45.586" level="INFO">Typing text 'PAWEE321' into text field 'psw'.</msg>
+<status status="PASS" starttime="20200317 20:53:45.585" endtime="20200317 20:53:45.785"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>repsw</arg>
+<arg>PAWEE321</arg>
+</arguments>
+<msg timestamp="20200317 20:53:45.786" level="INFO">Typing text 'PAWEE321' into text field 'repsw'.</msg>
+<status status="PASS" starttime="20200317 20:53:45.786" endtime="20200317 20:53:45.886"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:53:45.887" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:53:45.886" endtime="20200317 20:53:48.175"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_PASS}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:48.176" endtime="20200317 20:53:48.195"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:50.198" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:48.196" endtime="20200317 20:53:50.198"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:43.401" endtime="20200317 20:53:50.200" critical="yes"></status>
+</test>
+<test id="s1-t8" name="No Number In Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:53:50.207" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:53:50.207" endtime="20200317 20:53:50.352"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:52.354" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:50.353" endtime="20200317 20:53:52.354"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>psw</arg>
+<arg>PAWEEnaja</arg>
+</arguments>
+<msg timestamp="20200317 20:53:52.356" level="INFO">Typing text 'PAWEEnaja' into text field 'psw'.</msg>
+<status status="PASS" starttime="20200317 20:53:52.356" endtime="20200317 20:53:52.583"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>repsw</arg>
+<arg>PAWEEnaja</arg>
+</arguments>
+<msg timestamp="20200317 20:53:52.584" level="INFO">Typing text 'PAWEEnaja' into text field 'repsw'.</msg>
+<status status="PASS" starttime="20200317 20:53:52.584" endtime="20200317 20:53:52.705"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:53:52.706" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:53:52.706" endtime="20200317 20:53:54.955"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_PASS}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:53:54.956" endtime="20200317 20:53:54.973"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:56.974" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:54.974" endtime="20200317 20:53:56.974"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:50.205" endtime="20200317 20:53:56.976" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Least Character In Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:53:56.984" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:53:56.983" endtime="20200317 20:53:57.082"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:53:59.083" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:53:57.082" endtime="20200317 20:53:59.083"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>psw</arg>
+<arg>Pawee1</arg>
+</arguments>
+<msg timestamp="20200317 20:53:59.084" level="INFO">Typing text 'Pawee1' into text field 'psw'.</msg>
+<status status="PASS" starttime="20200317 20:53:59.084" endtime="20200317 20:53:59.231"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>repsw</arg>
+<arg>Pawee1</arg>
+</arguments>
+<msg timestamp="20200317 20:53:59.231" level="INFO">Typing text 'Pawee1' into text field 'repsw'.</msg>
+<status status="PASS" starttime="20200317 20:53:59.231" endtime="20200317 20:53:59.325"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:53:59.326" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:53:59.326" endtime="20200317 20:54:01.652"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_PASS}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:54:01.653" endtime="20200317 20:54:01.672"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:03.675" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:01.673" endtime="20200317 20:54:03.675"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:53:56.981" endtime="20200317 20:54:03.676" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Not match In Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:54:03.692" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:54:03.692" endtime="20200317 20:54:03.804"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:05.805" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:03.804" endtime="20200317 20:54:05.805"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>psw</arg>
+<arg>Pawee025</arg>
+</arguments>
+<msg timestamp="20200317 20:54:05.806" level="INFO">Typing text 'Pawee025' into text field 'psw'.</msg>
+<status status="PASS" starttime="20200317 20:54:05.806" endtime="20200317 20:54:05.933"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>repsw</arg>
+<arg>Pawee258</arg>
+</arguments>
+<msg timestamp="20200317 20:54:05.934" level="INFO">Typing text 'Pawee258' into text field 'repsw'.</msg>
+<status status="PASS" starttime="20200317 20:54:05.934" endtime="20200317 20:54:06.028"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:54:06.029" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:54:06.028" endtime="20200317 20:54:08.261"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_PASS}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:54:08.262" endtime="20200317 20:54:08.279"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:10.281" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:08.280" endtime="20200317 20:54:10.281"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:54:03.684" endtime="20200317 20:54:10.283" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Empty In Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:54:10.292" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:54:10.291" endtime="20200317 20:54:10.471"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:12.474" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:10.472" endtime="20200317 20:54:12.474"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>psw</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:54:12.476" level="INFO">Typing text '' into text field 'psw'.</msg>
+<status status="PASS" starttime="20200317 20:54:12.475" endtime="20200317 20:54:12.600"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>repsw</arg>
+<arg>${EMPTY}</arg>
+</arguments>
+<msg timestamp="20200317 20:54:12.601" level="INFO">Typing text '' into text field 'repsw'.</msg>
+<status status="PASS" starttime="20200317 20:54:12.600" endtime="20200317 20:54:12.686"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:54:12.687" level="INFO">Clicking button 'btn-submit-pw'.</msg>
+<status status="PASS" starttime="20200317 20:54:12.687" endtime="20200317 20:54:14.933"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_PASS}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:54:14.934" endtime="20200317 20:54:14.951"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:16.953" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:14.952" endtime="20200317 20:54:16.953"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:54:10.289" endtime="20200317 20:54:16.954" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Cancel Reset Password Staff">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>changePassword</arg>
+</arguments>
+<msg timestamp="20200317 20:54:16.957" level="INFO">Clicking button 'changePassword'.</msg>
+<status status="PASS" starttime="20200317 20:54:16.957" endtime="20200317 20:54:17.102"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:19.104" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:17.103" endtime="20200317 20:54:19.104"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>cancel-pw</arg>
+</arguments>
+<msg timestamp="20200317 20:54:19.106" level="INFO">Clicking button 'cancel-pw'.</msg>
+<status status="PASS" starttime="20200317 20:54:19.105" endtime="20200317 20:54:19.276"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200317 20:54:21.279" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200317 20:54:19.277" endtime="20200317 20:54:21.279"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>แก้ไขโปรไฟล์ของบุคลากร</arg>
+</arguments>
+<msg timestamp="20200317 20:54:21.286" level="INFO">Page title is 'แก้ไขโปรไฟล์ของบุคลากร'.</msg>
+<status status="PASS" starttime="20200317 20:54:21.280" endtime="20200317 20:54:21.286"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:54:16.956" endtime="20200317 20:54:21.287" critical="yes"></status>
+</test>
+<test id="s1-t13" name="Notify User">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOG_IN}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200317 20:54:21.292" level="INFO">Opening browser 'Chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/index.php'.</msg>
+<status status="PASS" starttime="20200317 20:54:21.291" endtime="20200317 20:54:30.948"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200317 20:54:30.950" level="INFO">Clicking element 'staff'.</msg>
+<status status="PASS" starttime="20200317 20:54:30.950" endtime="20200317 20:54:31.077"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>pawee@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200317 20:54:31.078" level="INFO">Typing text 'pawee@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200317 20:54:31.078" endtime="20200317 20:54:31.219"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>borrowCS123</arg>
+</arguments>
+<msg timestamp="20200317 20:54:31.220" level="INFO">Typing text 'borrowCS123' into text field 'password'.</msg>
+<status status="PASS" starttime="20200317 20:54:31.220" endtime="20200317 20:54:31.319"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200317 20:54:31.320" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200317 20:54:31.320" endtime="20200317 20:54:35.218"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${DASH_USER}</arg>
+</arguments>
+<msg timestamp="20200317 20:54:35.227" level="INFO">Current location is 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/dashboard_user.php#'.</msg>
+<status status="PASS" starttime="20200317 20:54:35.218" endtime="20200317 20:54:35.227"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>${WARN_USER}</arg>
+</arguments>
+<status status="PASS" starttime="20200317 20:54:35.228" endtime="20200317 20:54:35.244"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20200317 20:54:35.244" endtime="20200317 20:54:37.347"></status>
+</kw>
+<status status="PASS" starttime="20200317 20:54:21.289" endtime="20200317 20:54:37.348" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200317 20:52:58.335" endtime="20200317 20:54:37.357"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="13" fail="0">Critical Tests</stat>
+<stat pass="13" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="13" fail="0" id="s1" name="Edit Admin Staff">Edit Admin Staff</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

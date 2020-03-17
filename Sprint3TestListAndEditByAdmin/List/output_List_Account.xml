@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20200316 22:20:10.536" rpa="false">
+<suite id="s1" name="List Account" source="D:\3_02\softEn\Sprint3\List\List_Account.robot">
+<test id="s1-t1" name="Open List Account page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOG_IN}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200316 22:20:10.748" level="INFO">Opening browser 'Chrome' to base url 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/index.php'.</msg>
+<status status="PASS" starttime="20200316 22:20:10.748" endtime="20200316 22:20:18.995"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>staff</arg>
+</arguments>
+<msg timestamp="20200316 22:20:18.998" level="INFO">Clicking element 'staff'.</msg>
+<status status="PASS" starttime="20200316 22:20:18.997" endtime="20200316 22:20:19.118"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>admin@kku.ac.th</arg>
+</arguments>
+<msg timestamp="20200316 22:20:19.120" level="INFO">Typing text 'admin@kku.ac.th' into text field 'email'.</msg>
+<status status="PASS" starttime="20200316 22:20:19.119" endtime="20200316 22:20:19.260"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>adminKKU123</arg>
+</arguments>
+<msg timestamp="20200316 22:20:19.261" level="INFO">Typing text 'adminKKU123' into text field 'password'.</msg>
+<status status="PASS" starttime="20200316 22:20:19.260" endtime="20200316 22:20:19.377"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>btn-submit</arg>
+</arguments>
+<msg timestamp="20200316 22:20:19.377" level="INFO">Clicking button 'btn-submit'.</msg>
+<status status="PASS" starttime="20200316 22:20:19.377" endtime="20200316 22:20:22.150"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>userManage</arg>
+</arguments>
+<msg timestamp="20200316 22:20:22.152" level="INFO">Clicking element 'userManage'.</msg>
+<status status="PASS" starttime="20200316 22:20:22.152" endtime="20200316 22:20:23.961"></status>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<doc>Verifies that current URL is exactly ``url``.</doc>
+<arguments>
+<arg>${LIST_ACCOUNT}</arg>
+</arguments>
+<msg timestamp="20200316 22:20:23.971" level="INFO">Current location is 'http://10.199.66.227/SoftEn2020/Sec01/CustomerMayCry/soften/public/user_manager.php'.</msg>
+<status status="PASS" starttime="20200316 22:20:23.962" endtime="20200316 22:20:23.971"></status>
+</kw>
+<status status="PASS" starttime="20200316 22:20:10.747" endtime="20200316 22:20:23.972" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Invalid Close account">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>stdDeact2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:23.973" level="INFO">Clicking element 'stdDeact2'.</msg>
+<status status="PASS" starttime="20200316 22:20:23.973" endtime="20200316 22:20:24.068"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:26.070" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 22:20:24.069" endtime="20200316 22:20:26.070"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>stdDeactivatedCancel2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:26.073" level="INFO">Clicking button 'stdDeactivatedCancel2'.</msg>
+<status status="PASS" starttime="20200316 22:20:26.072" endtime="20200316 22:20:26.199"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>stdPermission2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:26.212" level="INFO">Current page contains element 'stdPermission2'.</msg>
+<status status="PASS" starttime="20200316 22:20:26.200" endtime="20200316 22:20:26.212"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:27.214" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200316 22:20:26.212" endtime="20200316 22:20:27.214"></status>
+</kw>
+<status status="PASS" starttime="20200316 22:20:23.972" endtime="20200316 22:20:27.215" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Valid Close account">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>stdDeact2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:27.217" level="INFO">Clicking element 'stdDeact2'.</msg>
+<status status="PASS" starttime="20200316 22:20:27.217" endtime="20200316 22:20:27.251"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:29.253" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 22:20:27.252" endtime="20200316 22:20:29.253"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>std-deactivated2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:29.254" level="INFO">Clicking button 'std-deactivated2'.</msg>
+<status status="PASS" starttime="20200316 22:20:29.254" endtime="20200316 22:20:31.457"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>stdPermission2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:31.477" level="INFO">Current page contains element 'stdPermission2'.</msg>
+<status status="PASS" starttime="20200316 22:20:31.458" endtime="20200316 22:20:31.477"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:32.482" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200316 22:20:31.479" endtime="20200316 22:20:32.482"></status>
+</kw>
+<status status="PASS" starttime="20200316 22:20:27.216" endtime="20200316 22:20:32.483" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Invalid Open account">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>stdDeact2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:32.485" level="INFO">Clicking element 'stdDeact2'.</msg>
+<status status="PASS" starttime="20200316 22:20:32.484" endtime="20200316 22:20:32.551"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:34.554" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 22:20:32.551" endtime="20200316 22:20:34.554"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>stdActivatedCancel2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:34.555" level="INFO">Clicking button 'stdActivatedCancel2'.</msg>
+<status status="PASS" starttime="20200316 22:20:34.554" endtime="20200316 22:20:34.639"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>stdPermission2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:34.652" level="INFO">Current page contains element 'stdPermission2'.</msg>
+<status status="PASS" starttime="20200316 22:20:34.640" endtime="20200316 22:20:34.652"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:35.653" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200316 22:20:34.653" endtime="20200316 22:20:35.653"></status>
+</kw>
+<status status="PASS" starttime="20200316 22:20:32.484" endtime="20200316 22:20:35.655" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Valid Open account">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>stdDeact2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:35.661" level="INFO">Clicking element 'stdDeact2'.</msg>
+<status status="PASS" starttime="20200316 22:20:35.660" endtime="20200316 22:20:35.751"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:37.754" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200316 22:20:35.752" endtime="20200316 22:20:37.754"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>std-activated2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:37.754" level="INFO">Clicking button 'std-activated2'.</msg>
+<status status="PASS" starttime="20200316 22:20:37.754" endtime="20200316 22:20:39.967"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>stdPermission2</arg>
+</arguments>
+<msg timestamp="20200316 22:20:39.979" level="INFO">Current page contains element 'stdPermission2'.</msg>
+<status status="PASS" starttime="20200316 22:20:39.967" endtime="20200316 22:20:39.979"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20200316 22:20:40.982" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200316 22:20:39.980" endtime="20200316 22:20:40.982"></status>
+</kw>
+<status status="PASS" starttime="20200316 22:20:35.658" endtime="20200316 22:20:40.983" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200316 22:20:10.538" endtime="20200316 22:20:40.988"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="List Account">List Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
